@@ -1,0 +1,167 @@
+@import url('https //fonts.googleapis.com/css family=poppins');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+body{
+    /* background:#081b29; */
+    color:#ededed;
+}
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 10%;
+    /* background: yellowgreen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position:relative;
+    font-size: 25px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top:0;
+    right: 0;
+    width:100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .5s;
+}
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .4s;
+}
+.navbar a:hover, .navbar a.active{
+    color: #00abf0;
+}
+.home{
+    display: flex;
+    background: url('../img/aloshy.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10%;
+
+}
+.homecontent{
+    max-width: 600px;
+}
+.homecontent h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.homecontent h1::before{
+    content: '';
+    position: absolute;
+    top:0;
+    right: 0;
+    width:100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .7s;
+}
+.homecontent h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    padding-bottom: 5%;
+
+}
+.homecontent h3::before{
+    content: '';
+    position: absolute;
+    top:0;
+    right: 0;
+    width:100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.2s;
+}
+.homecontent p{
+    font-size: 16px;
+    padding-bottom: 40px;
+    
+}
+
+.homecontent .button-home a{
+    width: 345px;
+    height: 80px;
+    /* padding-right: 20px; */
+
+}
+.button-home a{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100px;
+    height: 100%;
+    border: 2px solid #00abf0;
+    background-color: #00abf0;
+    border-radius: 8px;
+    font-size: 18px;
+    color:#081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    transition: .2s;
+}
+.button-home a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.button-home a:nth-child(2):hover{
+    background: #00abf0;
+    color: #081b29;
+    
+}
+.button-home a:hover{
+    background-color: transparent;
+    color: #00abf0;
+}
+.image-hover{
+    position: absolute;
+    top:0;
+    right:0px;
+    width: 600px;
+    height:100%;
+    background: transparent;
+    animation: forwards;
+    transition: 2s;
+
+}
+.image-hover:hover{
+    background:#081b29;
+}
+@keyframes showRight {
+    100%{
+        width:0;
+    }
+}
+
+.about{
+    align-items: center;
+}
